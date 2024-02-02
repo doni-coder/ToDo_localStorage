@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toDot</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #tasks {
+            width: 80%;
+            display: flex;
+            box-shadow: 3px 3px 8px rgba(90, 90, 90, 0.534);
+            border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            padding: 7px 10px;
+            margin-top: 15px;
+            font-family: "Comfortaa", sans-serif;
+        }
+
+        .checkBox {
+            width: 25px;
+            height: 25px;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            background-color: rgb(15, 13, 28);
+            justify-content: center;
+        }
+
+        .father {
+            width: 500px;
+        }
+
+        .father div {
+            margin-left: 50%;
+            transform: translate(-50%);
+        }
+
+        #tasks .inpt {
+            width: 100%;
+            border: none;
+            background-color: white;
+            padding: 10px 10px;
+        }
+
+        #tasks .inpt:focus,
+        .main-content form input {
+            outline: none;
+        }
+
+        #tasks button {
+            border: none;
+            padding: 5px 10px;
+            background-color: #16c609;
+            margin: 4px;
+            color: white;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .main-content {
+            width: 500px;
+            margin-top: 55px;
+            font-family: "Comfortaa", sans-serif;
+        }
+
+        .main-content form {
+            margin-top: 30px;
+            font-family: "Comfortaa", sans-serif;
+        }
+
+        .main-content form input {
+            width: 85%;
+            padding: 13px;
+            border: none;
+            border-radius: 4px 0px 0px 4px;
+        }
+
+        .main-content form button {
+            padding: 13px;
+            border: none;
+            color: white;
+            background-color: #7804bc;
+            border-radius: 0px 4px 4px 0px;
+            cursor: pointer;
+        }
+
+        @media (max-width:540px) {
+            .main-content {
+                width: 95%;
+            }
+
+            .father {
+                width: 95%;
+            }
+
+            .main-content form input {
+                width: 75%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="main-content">
+            <h2 style="text-align: center;font-size: 30px; color: white;">Manage your Task Everyday</h2>
+            <form>
+                <input placeholder="Enter Task here..." id="taskText" value="" type="text"><button id="btn">Add</button>
+            </form>
+            <div class="father">
+                <!-- js inject code -->
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
